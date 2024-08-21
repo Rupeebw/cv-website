@@ -1,7 +1,44 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h2>Welcome to My Personal Website</h2>
-    <p>This is where you can find my resume and more about me.</p>
-    <p>Click <a href="{{ url_for('resume') }}">here</a> to download my resume.</p>
+    <h2>Professional Summary</h2>
+    <p>
+        With over 15+ years of experience in the IT industry, I have had the privilege of working as a software engineer, solutions expert, and solutions consultant. Throughout my journey, I have successfully delivered projects across a wide range of technologies. Additionally, I ventured into entrepreneurship for a brief period, gaining valuable insights into business operations. A significant portion of my experience has involved collaborating with international clients, where I played a crucial role in designing and implementing solutions for their diverse infrastructure needs, ranging from small-scale setups to large-scale environments. I bring a strong track record of engaging with clients and delivering impactful solutions tailored to their specific requirements.
+    </p>
+
+    <h2>Education</h2>
+    <ul>
+        <li><strong>Master of Computer Applications:</strong> Vellore Institute Of Technology, 2006</li>
+        <li><strong>Bachelor of Science (Maths, Physics, Chemistry):</strong> Hansraj College, 2003</li>
+    </ul>
+
+    <h2>Work Experience</h2>
+    <ul>
+        <li><strong>TEMUS PTE, Singapore - DevSecOps Lead:</strong> 
+            <p>6th July 2022 - till date</p>
+            <p>Effectively leading and managing a team while overseeing customer operations for business-as-usual (BAU) activities and strategically developing a roadmap for successful onboarding of new regions.</p>
+        </li>
+        <li><strong>CREDIT AGRICOLE, Singapore - DevOps Lead:</strong>
+            <p>11th Jan 2022 - 5th July, 2022</p>
+            <p>Conducted comprehensive interviews, led Scrum sprints, and implemented cross-functional DevOps practices supporting applications with practical approaches.</p>
+        </li>
+        <li><strong>CAPGEMINI INDIA - DevOps Manager:</strong>
+            <p>18th Mar 2021 - 2nd Sep 2021</p>
+            <p>Conducted interviews, provided organization-level training, and implemented advanced technologies for efficient software delivery.</p>
+        </li>
+        <!-- Add more work experiences as needed -->
+    </ul>
+
+    <h2>Certificates</h2>
+    <ul>
+        <li><strong>Designing and Implementing Microsoft DevOps Solutions:</strong> AZ-400, 2020</li>
+        <li><strong>Microsoft Azure Solutions Architect Expert:</strong> AZ-303, AZ-304, 2020</li>
+        <li><strong>Microsoft Azure Certified Professional:</strong> MCP(70-533), 2017</li>
+        <li><strong>Docker Certified Professional:</strong> 2017</li>
+        <li><strong>Administering and Deploying System Center 2012 Configuration:</strong></li>
+    </ul>
+
+    <p>
+        Click <a href="{{ url_for('resume') }}">here</a> to download my full resume.
+    </p>
 {% endblock %}
