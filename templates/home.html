@@ -1,44 +1,98 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h2>Professional Summary</h2>
-    <p>
-        With over 15+ years of experience in the IT industry, I have had the privilege of working as a software engineer, solutions expert, and solutions consultant. Throughout my journey, I have successfully delivered projects across a wide range of technologies. Additionally, I ventured into entrepreneurship for a brief period, gaining valuable insights into business operations. A significant portion of my experience has involved collaborating with international clients, where I played a crucial role in designing and implementing solutions for their diverse infrastructure needs, ranging from small-scale setups to large-scale environments. I bring a strong track record of engaging with clients and delivering impactful solutions tailored to their specific requirements.
-    </p>
+   <!-- Profile section is already included in the hero section of base.html -->
 
-    <h2>Education</h2>
-    <ul>
-        <li><strong>Master of Computer Applications:</strong> Vellore Institute Of Technology, 2006</li>
-        <li><strong>Bachelor of Science (Maths, Physics, Chemistry):</strong> Hansraj College, 2003</li>
-    </ul>
+   <section class="education mt-5">
+       <h2 class="text-center mb-4">Education</h2>
+       <div class="row justify-content-center">
+           <div class="col-md-5 mb-3">
+               <div class="card shadow">
+                   <div class="card-body">
+                       <h5 class="card-title">Vellore Institute Of Technology</h5>
+                       <p class="card-text">Master of Computer Applications, 2006</p>
+                   </div>
+               </div>
+           </div>
+           <div class="col-md-5 mb-3">
+               <div class="card shadow">
+                   <div class="card-body">
+                       <h5 class="card-title">Hansraj College</h5>
+                       <p class="card-text">Bachelor of Science (Maths, Physics, Chemistry), 2003</p>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
 
-    <h2>Work Experience</h2>
-    <ul>
-        <li><strong>TEMUS PTE, Singapore - DevSecOps Lead:</strong> 
-            <p>6th July 2022 - till date</p>
-            <p>Effectively leading and managing a team while overseeing customer operations for business-as-usual (BAU) activities and strategically developing a roadmap for successful onboarding of new regions.</p>
-        </li>
-        <li><strong>CREDIT AGRICOLE, Singapore - DevOps Lead:</strong>
-            <p>11th Jan 2022 - 5th July, 2022</p>
-            <p>Conducted comprehensive interviews, led Scrum sprints, and implemented cross-functional DevOps practices supporting applications with practical approaches.</p>
-        </li>
-        <li><strong>CAPGEMINI INDIA - DevOps Manager:</strong>
-            <p>18th Mar 2021 - 2nd Sep 2021</p>
-            <p>Conducted interviews, provided organization-level training, and implemented advanced technologies for efficient software delivery.</p>
-        </li>
-        <!-- Add more work experiences as needed -->
-    </ul>
+   <section class="skills mt-5">
+       <h2 class="text-center mb-4">Skills</h2>
+       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+           <div class="col">
+               <div class="card shadow text-center">
+                   <div class="card-body">
+                       <h5 class="card-title">DevSecOps</h5>
+                       <p class="card-text">Advanced</p>
+                   </div>
+               </div>
+           </div>
+           <div class="col">
+               <div class="card shadow text-center">
+                   <div class="card-body">
+                       <h5 class="card-title">Cloud-AWS/Azure</h5>
+                       <p class="card-text">Advanced</p>
+                   </div>
+               </div>
+           </div>
+           <div class="col">
+               <div class="card shadow text-center">
+                   <div class="card-body">
+                       <h5 class="card-title">Security Tools</h5>
+                       <p class="card-text">Advanced</p>
+                   </div>
+               </div>
+           </div>
+           <div class="col">
+               <div class="card shadow text-center">
+                   <div class="card-body">
+                       <h5 class="card-title">Process- Agile-Scrum</h5>
+                       <p class="card-text">Advanced</p>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
 
-    <h2>Certificates</h2>
-    <ul>
-        <li><strong>Designing and Implementing Microsoft DevOps Solutions:</strong> AZ-400, 2020</li>
-        <li><strong>Microsoft Azure Solutions Architect Expert:</strong> AZ-303, AZ-304, 2020</li>
-        <li><strong>Microsoft Azure Certified Professional:</strong> MCP(70-533), 2017</li>
-        <li><strong>Docker Certified Professional:</strong> 2017</li>
-        <li><strong>Administering and Deploying System Center 2012 Configuration:</strong></li>
-    </ul>
+   <section class="quick-id mt-5">
+       <h2 class="text-center mb-4">Quick ID</h2>
+       <ul class="list-unstyled text-center">
+           <li>Phone: (+65) 1111 1111</li>
+           <li>Email: customer.care@gmail.com</li>
+           <li>Website: <a href="https://www.rupeshpanwar.com">www.rupeshpanwar.com</a></li>
+           <li>Address: Abc, Redhill  Road, SG - 423871</li>
+       </ul>
+   </section>
 
-    <p>
-        Click <a href="{{ url_for('resume') }}">here</a> to download my full resume.
-    </p>
+   <section class="contact-me mt-5">
+       <h2 class="text-center mb-4">Contact Me</h2>
+       <form class="mx-auto" style="max-width: 600px;">
+           <div class="mb-3">
+               <label for="name" class="form-label">Name</label>
+               <input type="text" class="form-control" id="name" name="name">
+           </div>
+           <div class="mb-3">
+               <label for="email" class="form-label">Email</label>
+               <input type="email" class="form-control" id="email" name="email">
+           </div>
+           <div class="mb-3">
+               <label for="subject" class="form-label">Subject</label>
+               <input type="text" class="form-control" id="subject" name="subject">
+           </div>
+           <div class="mb-3">
+               <label for="message" class="form-label">Message</label>
+               <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+           </div>
+           <button type="submit" class="btn btn-primary w-100">Send</button>
+       </form>
+   </section>
 {% endblock %}

@@ -1,25 +1,138 @@
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
-}
-
-header {
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-nav {
-    margin-bottom: 20px;
-}
-
-nav a {
-    margin: 0 10px;
-    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
     color: #333;
 }
 
-footer {
-    text-align: center;
-    margin-top: 20px;
+.hero {
+    background-color: #333; /* Dark background color */
+    padding: 60px 20px; /* Add padding to create space around the content */
+    text-align: center; /* Center the text and image */
+    border-radius: 15px; /* Add subtle rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
+
+.hero-content {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent overlay for text visibility */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.hero img {
+    border-radius: 50%; /* Circle profile image */
+    width: 150px; /* Size of the profile image */
+    height: 150px;
+    object-fit: cover; /* Ensure image fits perfectly */
+    border: 5px solid white; /* White border around the profile image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for the image */
+}
+
+.hero h1 {
+    font-size: 2.5em; /* Larger font size for the name */
+    color: #fff; /* White text color */
+    margin-top: 20px; /* Space between the image and name */
+    font-weight: 700; /* Bold font weight */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+}
+
+.hero p {
+    font-size: 1.25em; /* Font size for the title */
+    color: #ddd; /* Lighter shade of white for the title */
+    margin-top: 10px; /* Space between the name and title */
+    font-weight: 300; /* Light font weight for contrast */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.education, .skills, .quick-id, .contact-me {
+    margin-bottom: 40px;
+}
+
+.education-container, .skills-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.education-item, .skill-item {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 30%;
+}
+
+.quick-id ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-id ul li {
+    margin: 10px 0;
+}
+
+.contact-me form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-me label {
+    margin: 10px 0 5px;
+}
+
+.contact-me input, .contact-me textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-me button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+footer .social-icons img {
+    width: 30px;
+    margin: 0 10px;
+}
+
